@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{99fe9ce9-d6bd-47af-8519-8fc52294c3e9}</ProjectGuid>
+    <RootNamespace>B25Decoder</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;B25DECODER_EXPORTS;BONSDK_IMPLEMENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/BonProject;$(SolutionDir)\BonSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;B25DECODER_EXPORTS;BONSDK_IMPLEMENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/BonProject;$(SolutionDir)\BonSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;B25DECODER_EXPORTS;BONSDK_IMPLEMENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/BonProject;$(SolutionDir)\BonSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;B25DECODER_EXPORTS;BONSDK_IMPLEMENT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/BonProject;$(SolutionDir)\BonSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="B25Decoder.cpp" />
+    <ClCompile Include="BonProject\BcasCardReader.cpp" />
+    <ClCompile Include="BonProject\BonClassEnumerator.cpp" />
+    <ClCompile Include="BonProject\BonCoreEngine.cpp" />
+    <ClCompile Include="BonProject\BonDebug.cpp" />
+    <ClCompile Include="BonProject\BonObject.cpp" />
+    <ClCompile Include="BonProject\FileReader.cpp" />
+    <ClCompile Include="BonProject\FileWriter.cpp" />
+    <ClCompile Include="BonProject\IniCfgStorage.cpp" />
+    <ClCompile Include="BonProject\MediaBase.cpp" />
+    <ClCompile Include="BonProject\MediaGrabber.cpp" />
+    <ClCompile Include="BonProject\ModCatalogBase.cpp" />
+    <ClCompile Include="BonProject\Multi2Decoder.cpp" />
+    <ClCompile Include="BonProject\ProgAnalyzer.cpp" />
+    <ClCompile Include="BonProject\RegCfgStorage.cpp" />
+    <ClCompile Include="BonProject\SmartFile.cpp" />
+    <ClCompile Include="BonProject\SmartSocket.cpp" />
+    <ClCompile Include="BonProject\SyncObject.cpp" />
+    <ClCompile Include="BonProject\TsDataEncode.cpp" />
+    <ClCompile Include="BonProject\TsDescBase.cpp" />
+    <ClCompile Include="BonProject\TsDescrambler.cpp" />
+    <ClCompile Include="BonProject\TsDescriptor.cpp" />
+    <ClCompile Include="BonProject\TsEpgCore.cpp" />
+    <ClCompile Include="BonProject\TsPacket.cpp" />
+    <ClCompile Include="BonProject\TsPacketSync.cpp" />
+    <ClCompile Include="BonProject\TsPidMapper.cpp" />
+    <ClCompile Include="BonProject\TsSection.cpp" />
+    <ClCompile Include="BonProject\TsSourceTuner.cpp" />
+    <ClCompile Include="BonProject\TsTable.cpp" />
+    <ClCompile Include="BonProject\TsTableBase.cpp" />
+    <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="B25Decoder.h" />
+    <ClInclude Include="BonProject\BcasCardReader.h" />
+    <ClInclude Include="BonProject\BonClassEnumerator.h" />
+    <ClInclude Include="BonProject\BonCoreEngine.h" />
+    <ClInclude Include="BonProject\FileReader.h" />
+    <ClInclude Include="BonProject\FileWriter.h" />
+    <ClInclude Include="BonProject\IniCfgStorage.h" />
+    <ClInclude Include="BonProject\MediaGrabber.h" />
+    <ClInclude Include="BonProject\Multi2Decoder.h" />
+    <ClInclude Include="BonProject\ProgAnalyzer.h" />
+    <ClInclude Include="BonProject\PsiSection.h" />
+    <ClInclude Include="BonProject\PsiTableBase.h" />
+    <ClInclude Include="BonProject\RegCfgStorage.h" />
+    <ClInclude Include="BonProject\SmartFile.h" />
+    <ClInclude Include="BonProject\SmartSocket.h" />
+    <ClInclude Include="BonProject\TsDescBase.h" />
+    <ClInclude Include="BonProject\TsDescrambler.h" />
+    <ClInclude Include="BonProject\TsDescriptor.h" />
+    <ClInclude Include="BonProject\TsEpgCore.h" />
+    <ClInclude Include="BonProject\TsPacket.h" />
+    <ClInclude Include="BonProject\TsPacketSync.h" />
+    <ClInclude Include="BonProject\TsPidMapper.h" />
+    <ClInclude Include="BonProject\TsSection.h" />
+    <ClInclude Include="BonProject\TsSourceTuner.h" />
+    <ClInclude Include="BonProject\TsTable.h" />
+    <ClInclude Include="BonProject\TsTableBase.h" />
+    <ClInclude Include="IB25Decoder.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
