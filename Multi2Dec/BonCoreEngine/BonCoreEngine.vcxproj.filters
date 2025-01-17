@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BonCoreEngine">
+      <UniqueIdentifier>{b2e15473-2276-43b9-b634-08598bbe89a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonStdService">
+      <UniqueIdentifier>{6b242f30-e6d9-41ba-93e7-5aa803870e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonCoreEngine\ヘッダーファイル">
+      <UniqueIdentifier>{0295337e-663b-476b-9cae-4cd945a974e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonCoreEngine\ソースファイル">
+      <UniqueIdentifier>{9b2ba6d3-73b2-430f-a855-9b23feaf4795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonStdService\ヘッダーファイル">
+      <UniqueIdentifier>{3402b4ac-ab47-47a1-86ee-bbdef17a9318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonStdService\ソースファイル">
+      <UniqueIdentifier>{e34667ff-950f-4f02-9ab5-0a5c1292d46d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonCoreEngine\BonClassEnumerator.cpp">
+      <Filter>BonCoreEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonCoreEngine\BonCoreEngine.cpp">
+      <Filter>BonCoreEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonStdService\IniCfgStorage.cpp">
+      <Filter>BonStdService\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonStdService\RegCfgStorage.cpp">
+      <Filter>BonStdService\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonStdService\SmartFile.cpp">
+      <Filter>BonStdService\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonStdService\SmartSocket.cpp">
+      <Filter>BonStdService\ソースファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonCoreEngine\BonClassEnumerator.h">
+      <Filter>BonCoreEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonCoreEngine\BonCoreEngine.h">
+      <Filter>BonCoreEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonStdService\IniCfgStorage.h">
+      <Filter>BonStdService\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonStdService\RegCfgStorage.h">
+      <Filter>BonStdService\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonStdService\SmartFile.h">
+      <Filter>BonStdService\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonStdService\SmartSocket.h">
+      <Filter>BonStdService\ヘッダーファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
