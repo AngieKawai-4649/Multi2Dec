@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BonTsDecoder">
+      <UniqueIdentifier>{427a97ad-c790-4243-b73d-a7f5a3ad4de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonTsEngine">
+      <UniqueIdentifier>{537d0237-2bd4-40c9-9cdf-c04d0cc8a068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonTsDecoder\ヘッダーファイル">
+      <UniqueIdentifier>{e7f26589-b9d1-4ff4-b5a3-063a24c1d707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonTsDecoder\ソースファイル">
+      <UniqueIdentifier>{e4c58602-0f71-45bd-984d-792664549fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonTsEngine\ヘッダーファイル">
+      <UniqueIdentifier>{d6abc538-34f0-4e13-b1a3-8d81b9275077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BonTsEngine\ソースファイル">
+      <UniqueIdentifier>{6c6dd6f7-9ce2-46b5-8125-2562c88a61bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ModCatalog.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsDecoder\FileReader.cpp">
+      <Filter>BonTsDecoder\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsDecoder\FileWriter.cpp">
+      <Filter>BonTsDecoder\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsDecoder\MediaGrabber.cpp">
+      <Filter>BonTsDecoder\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsDecoder\ProgAnalyzer.cpp">
+      <Filter>BonTsDecoder\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsDecoder\TsDescrambler.cpp">
+      <Filter>BonTsDecoder\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsDecoder\TsPacketSync.cpp">
+      <Filter>BonTsDecoder\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsDecoder\TsSourceTuner.cpp">
+      <Filter>BonTsDecoder\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\Multi2Decoder.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsDescBase.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsDescriptor.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsEpgCore.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsPacket.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsPidMapper.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsSection.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsTable.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BonTsEngine\TsTableBase.cpp">
+      <Filter>BonTsEngine\ソースファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ModCatalog.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsDecoder\FileReader.h">
+      <Filter>BonTsDecoder\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsDecoder\FileWriter.h">
+      <Filter>BonTsDecoder\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsDecoder\MediaGrabber.h">
+      <Filter>BonTsDecoder\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsDecoder\ProgAnalyzer.h">
+      <Filter>BonTsDecoder\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsDecoder\TsDescrambler.h">
+      <Filter>BonTsDecoder\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsDecoder\TsPacketSync.h">
+      <Filter>BonTsDecoder\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsDecoder\TsSourceTuner.h">
+      <Filter>BonTsDecoder\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\Multi2Decoder.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsDescBase.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsDescriptor.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsEpgCore.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsPacket.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsPidMapper.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsSection.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsTable.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="BonTsEngine\TsTableBase.h">
+      <Filter>BonTsEngine\ヘッダーファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
